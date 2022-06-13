@@ -2,4 +2,29 @@
   text-align: center;
 }
 
+.Header{
+  padding: 10px;
+  text-align: center;
+  background: #c3521d04;
+  color: rgba(110, 216, 110, 0.407);
+  font-size: 1.2rem;
+}
+.ShowAllArticles {
+  border:3px rgb(14, 53, 193) solid;
+  display:flex;
+  margin:2rem;
+  padding: 5px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.ShowAllArticles__article{
+  border:3px rgb(235, 91, 24) solid;
+  display:flex;
+  margin:1rem;
+  padding: 5px;
+  flex-direction: column;
+  width: 28%;
+  align-items: center;
+}
