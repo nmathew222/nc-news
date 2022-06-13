@@ -28,7 +28,7 @@ function ShowAllArticles({ selectedArticles }) {
         {allArticles.map((article) => {
           return (
             <div key={article.article_id} className="ShowAllArticles__Article">
-              <h4 className="thumbnail">
+              <h4>
                 {article.title} 
               </h4>
 
