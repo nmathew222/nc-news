@@ -29,7 +29,10 @@ function ShowAllArticles({ selectedArticles }) {
           return (
             <div key={article.article_id} className="ShowAllArticles__Article">
               <h4>
-                {article.title} 
+                Title: {article.title} 
+              </h4>
+              <h4>
+               Author: {article.author}
               </h4>
 
               

@@ -1,10 +1,10 @@
 .App {
   text-align: center;
-  /*background:url(https://img.freepik.com/free-vector/coffee-newspaper_1325-142.jpg?t=st=1655159733~exp=1655160333~hmac=6304de2bc09720c84c5819b592032578f12c34d803d5e86bfc5166d16e238fc5&w=1060) left top repeat;
+  background:url(https://img.freepik.com/free-vector/coffee-newspaper_1325-142.jpg?t=st=1655159733~exp=1655160333~hmac=6304de2bc09720c84c5819b592032578f12c34d803d5e86bfc5166d16e238fc5&w=1060) left top repeat;
   background-size: 100px 80px;
   background-repeat: no-repeat;
   padding: 80px;
-  */
+  
   background-color: #2c5f2d62;
   color: #2BAE66FF;
 
@@ -23,7 +23,7 @@
 }
 .ShowAllArticles {
   border:3px #2BAE66FF solid;
-  border-radius: 20%;
+  border-radius: 12%;
   display:flex;
   margin:2rem;
   padding: 5px;
