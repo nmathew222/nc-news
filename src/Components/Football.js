@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import baseUrl from "../utils/api";
 
 function Football({ selectedArticles }) {
   const [allFootball, setAllCooking] = useState([]);
   const [IsLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`https://nc-news-nikhil.herokuapp.com/api/articles`)
-      .then((res) => {
+
+    fetch(`${baseUrl}/articles`).then((res) => {
         return res.json();
       })
       .then(({ articles }) => {
@@ -35,7 +36,9 @@ function Football({ selectedArticles }) {
               <h4>
                Author: {article.author}
               </h4>
-
+              <Link to={`/articles/${article.article_id}`}>
+          <img className="thumbnail" src="https://www.freeiconspng.com/thumbs/news-icon/news-icon-24.png"></img>
+          </Link>
               
             </div>
           );

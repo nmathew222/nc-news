@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar';
 import Cooking from './Components/Cooking';
 import Coding from './Components/Coding';
 import Football from './Components/Football';
+import ShowArticle from './Components/ShowArticle';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
        <Route path='/cooking' element={<Cooking/>}></Route>
     <Route path='/coding' element= {<Coding/>}></Route>
     <Route path='/football' element={<Football/>}></Route>
-
+    <Route path='/articles/:article_id' element={<ShowArticle/>}></Route>
      </Routes>
     
     
