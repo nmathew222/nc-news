@@ -35,7 +35,9 @@ function Football({ selectedArticles }) {
               <h4>
                Author: {article.author}
               </h4>
-
+              <Link to={`/articles/${article.article_id}`}>
+          <img className="thumbnail" src="https://www.freeiconspng.com/thumbs/news-icon/news-icon-24.png"></img>
+          </Link>
               
             </div>
           );
