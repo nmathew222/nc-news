@@ -7,7 +7,7 @@ import Cooking from './Components/Cooking';
 import Coding from './Components/Coding';
 import Football from './Components/Football';
 import ShowArticle from './Components/ShowArticle';
-
+import Users from './Components/Users';
 function App() {
   return (
     <BrowserRouter>
@@ -20,6 +20,8 @@ function App() {
     <Route path='/coding' element= {<Coding/>}></Route>
     <Route path='/football' element={<Football/>}></Route>
     <Route path='/articles/:article_id' element={<ShowArticle/>}></Route>
+    <Route path='/users' element={<Users/>}></Route>
+
      </Routes>
     
     

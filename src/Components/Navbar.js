@@ -13,6 +13,9 @@ function Navbar() {
       <div className="Navbar__item">
         <a href="/coding">coding</a>
       </div>
+      <div className="Navbar__item">
+        <a href="/users">Users</a>
+      </div>
     </div>
   );
 }
