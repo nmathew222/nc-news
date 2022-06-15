@@ -13,3 +13,10 @@ export const patchVotes = (article_id, inc_votes) => {
   })
 }
 
+
+export const getComments = (article_id, username, body) => {
+  return articlesApi.get(`articles/${article_id}/comments`, username,body).then(( res ) => {
+      return res.data
+  })
+}
+

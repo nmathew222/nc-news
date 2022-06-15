@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Comments from "./Comments";
 import Votes from "./votes";
 function ShowArticle({ catSelected }) {
   const [article, setArticles] = useState([]);
@@ -43,6 +44,7 @@ function ShowArticle({ catSelected }) {
           <Votes article_id={article.article_id} votes={article.votes} />
 
           <p>Comment Count: {article.comment_count}</p>
+          <Comments/>
         </div>
       </div>
     </>
