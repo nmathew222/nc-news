@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import baseUrl from "../utils/api";
 
 function ShowAllArticles({ selectedArticles }) {
   const [allArticles, setAllArticles] = useState([]);
   const [IsLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`${baseUrl}/articles`)
+    fetch(`https://nc-news-nikhil.herokuapp.com/api/articles`)
       .then((res) => {
         return res.json();
       })

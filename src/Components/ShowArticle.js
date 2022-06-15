@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Votes from "./votes";
 function ShowArticle({ catSelected }) {
   const [article, setArticles] = useState([]);
   const [IsLoading, setIsLoading] = useState(true);
@@ -21,8 +22,9 @@ function ShowArticle({ catSelected }) {
         console.log(error);
       });
   }, [article_id]);
-  if(error)
-  { return <h1>Article Not Found</h1>};
+  if (error) {
+    return <h1>Article Not Found</h1>;
+  }
 
   if (IsLoading) {
     return <p>loading... </p>;
@@ -37,7 +39,9 @@ function ShowArticle({ catSelected }) {
           <h4>{article.article_title}</h4>
           <p>Author: {article.author}</p>
           <p>topic: {article.topic}</p>
-          <p>Votes: {article.votes}</p>
+          
+          <Votes article_id={article.article_id} votes={article.votes} />
+
           <p>Comment Count: {article.comment_count}</p>
         </div>
       </div>

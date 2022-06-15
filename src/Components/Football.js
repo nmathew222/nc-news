@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import baseUrl from "../utils/api";
 
 function Football({ selectedArticles }) {
   const [allFootball, setAllCooking] = useState([]);
@@ -8,7 +7,7 @@ function Football({ selectedArticles }) {
 
   useEffect(() => {
 
-    fetch(`${baseUrl}/articles`).then((res) => {
+    fetch(`https://nc-news-nikhil.herokuapp.com/api/articles`).then((res) => {
         return res.json();
       })
       .then(({ articles }) => {
