@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Comments from "./Comments";
+import PostComment from "./PostComment";
 import Votes from "./votes";
 function ShowArticle({ catSelected }) {
   const [article, setArticles] = useState([]);
@@ -40,11 +41,12 @@ function ShowArticle({ catSelected }) {
           <h4>{article.article_title}</h4>
           <p>Author: {article.author}</p>
           <p>topic: {article.topic}</p>
-          
+
           <Votes article_id={article.article_id} votes={article.votes} />
 
           <p>Comment Count: {article.comment_count}</p>
-          <Comments/>
+          <Comments />
+          <PostComment article_id={article.article_id} />
         </div>
       </div>
     </>
