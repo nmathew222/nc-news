@@ -32,7 +32,7 @@ export default function Comments() {
       <section>
           <div>
           {goodRequest === true ? (
-            <p>Your comment is deleted</p>
+            <p>Your comment has now been deleted</p>
           ) : badRequest === true ? (
             <p>Invalid comment </p>
           ) : null}{" "}
