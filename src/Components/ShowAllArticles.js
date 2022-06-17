@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 function ShowAllArticles({ selectedArticles }) {
   const [allArticles, setAllArticles] = useState([]);
   const [IsLoading, setIsLoading] = useState(true);
+  const [badRequest, setBadRequest] = useState(false);
+
 
   useEffect(() => {
     fetch(`https://nc-news-nikhil.herokuapp.com/api/articles`)
